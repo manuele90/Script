@@ -1,0 +1,13 @@
+magick.exe mogrify -resize 250x250 -path 250x250/ *.png *.jpg
+
+
+magick mogrify -quality "90" -resize "1280>" "C:\temp\original\*.jpg"
+
+
+magick mogrify -quality "90" -resize "1280>" -path "P:\Lavoro Operai\Vicenza\*.jpg" 
+
+
+
+%%%%%%%%%%%%% COMANDO CORRETTO - BISOGNA LANCIARLO DALLA DIRECTORY GIUSTA %%%%%%%%%%%%%%%
+
+FOR /R %f IN (*.jpg) DO mogrify -quality "90" -resize "1280>" "%f"

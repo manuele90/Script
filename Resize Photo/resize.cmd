@@ -1,0 +1,6 @@
+cd /D "P:\Lavoro Operai\Bologna"
+FOR /R %%f IN (*.jpg) DO magick mogrify -resize "1280>" "%%f"
+cd /D "P:\Lavoro Operai\Recanati"
+FOR /R %%f IN (*.jpg) DO magick mogrify -resize "1280>" "%%f"
+cd /D "P:\Lavoro Operai\Vicenza"
+FOR /R %%f IN (*.jpg) DO magick mogrify -resize "1280>" "%%f"
